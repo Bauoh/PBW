@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- no1 -->
+    <h2>no1</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Foto Produk</th>
+          <th>Nama Menu</th>
+          <th>Kategori</th>
+          <th>Harga</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center">
+            <img src="caffe.png" alt="Hot Caffe Latte" width="100">
+          </td>
+          <td>Hot Caffe Latte</td>
+          <td>Minuman Panas</td>
+          <td>Rp 32.000</td>
+          <td>Espresso dengan susu murni hangat dan latte art.</td>
+        </tr>
+        <tr>
+          <td align="center">
+            <img src="roti.png" alt="Butter Croissant" width="100">
+          </td>
+          <td>Butter Croissant</td>
+          <td>Pastry</td>
+          <td>Rp 25.000</td>
+          <td>Pastry renyah bergaya Prancis dengan rasa mentega kaya.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>no2</h1>
+
+    <!-- no2 -->
+    <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th rowspan="2">NAMA</th>
+          <th colspan="2">MATERI</th>
+          <th colspan="2">IPK</th>
+        </tr>
+        <tr>
+          <th>WORKSHOP</th>
+          <th>KURSUS</th>
+          <th>LOKAL</th>
+          <th>UTAMA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Baris Adi -->
+        <tr>
+          <td>Adi</td>
+          <td>Introduction to XML</td>
+          <td>Web Programming With ASP</td>
+          <td align="center">3,23</td>
+          <td align="center">3,47</td>
+        </tr>
+        <!-- Baris Ani (Menggunakan rowspan untuk kolom gabungan) -->
+        <tr>
+          <td rowspan="2">Ani</td>
+          <td>Visual basic With Database</td>
+          <td rowspan="2" align="center">Visual Basic With SQL Server</td>
+          <td rowspan="2" align="center">3,53</td>
+          <td rowspan="2" align="center">3,64</td>
+        </tr>
+        <tr>
+          <td>Oracle Developer Report</td>
+        </tr>
+        <!-- Baris Ali -->
+        <tr>
+          <td>Ali</td>
+          <td>Visual basic With</td>
+          <td>Introduction to Oracle: SQL and PL/SQL</td>
+          <td align="center">3,66</td>
+          <td align="center">3,39</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>no3</h1>
+    <!-- no3 -->
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <legend><strong>1. Informasi Akun & Keamanan</strong></legend>
+        <p><input type="text" id="username" name="username" placeholder="Masukkan username" required></p>
+        <p><input type="email" id="email" name="email" placeholder="contoh@email.com" required></p>
+        <p><input type="password" id="password" name="password" required></p>
+        <p><input type="tel" id="telepon" name="telepon" placeholder="081234567890"></p>
+        <p><input type="url" id="website" name="website" placeholder="https://example.com"></p>
+        <p>
+          <input type="number" id="pin" name="pin" min="100000" max="999999" placeholder="123456">
+          <input type="hidden" id="form_token" name="form_token" value="token_sistem_abc123">
+        </p>
+        <legend><strong>2. Data Pribadi & Pilihan</strong></legend>
+        <p>
+          <input type="radio" id="pria" name="gender" value="Pria">
+          <input type="radio" id="wanita" name="gender" value="Wanita">
+        </p>
+        <p>
+          <input type="checkbox" id="koding" name="hobi[]" value="Koding">
+          <input type="checkbox" id="desain" name="hobi[]" value="Desain">
+          <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+        </p>
+        <p>
+          <select id="pendidikan" name="pendidikan">
+            <option value="">-- Pilih Pendidikan --</option>
+            <option value="SMA/SMK">SMA / SMK</option>
+            <option value="D3">Diploma (D3)</option>
+            <option value="S1">Sarjana (S1)</option>
+            <option value="S2">Magister (S2)</option>
+          </select>
+        </p>
+        <p>
+          <input list="list-kota" id="kota" name="kota" placeholder="Ketik atau pilih kota...">
+          <datalist id="list-kota">
+            <option value="Jakarta">
+            <option value="Bandung">
+            <option value="Surabaya">
+            <option value="Yogyakarta">
+            <option value="Medan">
+          </datalist>
+        </p>
+        <legend><strong>3. Tanggal, Waktu & Warna</strong></legend>
+        <p><input type="date" id="tgl_lahir" name="tgl_lahir"></p>
+        <p><input type="time" id="jam_kontak" name="jam_kontak"></p>
+        <p><input type="datetime-local" id="jadwal" name="jadwal"></p>
+        <p><input type="month" id="bulan_masuk" name="bulan_masuk"></p>
+        <p><input type="week" id="minggu_libur" name="minggu_libur"></p>
+        <p><input type="color" id="warna_favorit" name="warna_favorit" value="#3498db"></p>
+        <legend><strong>4. File & Penilaian</strong></legend>
+        <p><input type="file" id="foto" name="foto" accept="image/*"></p>
+        <p><input type="range" id="kepuasan" name="kepuasan" min="1" max="10" value="5"></p>
+        <p><input type="search" id="pencarian" name="pencarian" placeholder="Cari sesuatu..."></p>
+        <p><textarea id="catatan" name="catatan" rows="3" cols="30" placeholder="Tuliskan pesan atau catatan Anda di sini..."></textarea></p>
+        <legend><strong>5. Aksi Formulir</strong></legend>
+        <p>
+          <input type="submit" value="Kirim Data (Submit)">
+          <input type="reset" value="Reset Form (Reset)">
+          <input type="button" value="Tombol Biasa (Button)" onclick="alert('Tombol khusus diklik!')">
+          <button type="button">Tombol Tag &lt;button&gt;</button>
+        </p>
+        <p>
+          <input type="image" src="https://via.placeholder.com/100x35?text=Submit" alt="Submit Gambar">
+        </p>
+    </form>
+
+  </body>
+</html>
